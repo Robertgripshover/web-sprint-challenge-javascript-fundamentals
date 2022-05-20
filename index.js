@@ -210,19 +210,22 @@ function greeting(stringFirstName, stringLastName){
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 function CuboidMaker(attr){
   this.length = attr.length;
   this.width = attr.width;
   this.height = attr.height;
 }
-
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   💡 NOTE: Formula for cuboid volume: length * width * height   
 */
 
-
+CuboidMaker.prototype.volume = function(){
+  return this.length * this.width * this.height
+}
 
 
 /* 🐴🐴🐴 Step 3: Surface Area Method 🐴🐴🐴
