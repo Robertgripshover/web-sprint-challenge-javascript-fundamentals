@@ -30,9 +30,12 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let result =0;
+  for(let i=0; i <= num; i++){
+      result += i;
+  };
+  return result;
   }
  
 
@@ -60,9 +63,16 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  function animalNames(array1){
+    const displayNames = [];
+    array1.forEach(animal => {
+      if(animal === animal.animal_name || animal.scientific_name){
+        return displayNames.push(animal.animal_name && animal.scientific_name)
+      }
+    })
+    return displayNames
+    }
+  
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -75,8 +85,11 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array1){
+    const newArrayOfStrings = array1.map((element) => {
+      return element.animal_name.toLowerCase()
+    })
+    return newArrayOfStrings
   }
   
   
@@ -88,8 +101,8 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(array1){
+    return array1.filter(item => item.population < 5)
   }
   
 
@@ -102,9 +115,11 @@ const zooAnimals = [
   💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+function USApop(array1){
+    const totalPop = array1.map(element => element.population)
+    return totalPop.reduce((total, curr) => total + curr, 0)
   }
+
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
