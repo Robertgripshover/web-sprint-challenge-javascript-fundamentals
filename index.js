@@ -139,7 +139,7 @@ function USApop(array1){
   */
 
   function consume(a, b, cb){
-    /*Your Code Here */
+    return cb(a, b);
   }
  
   
@@ -150,9 +150,12 @@ function USApop(array1){
  2. Return the sum of those numbers
  */
 
+
+ //COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 function add(num1, num2){
     return num1 + num2;
   }
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 
 
 /* Use multiply to do the following:
@@ -160,9 +163,13 @@ function add(num1, num2){
 2. Return the product of those numbers
 */
 
+
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 function multiply(num1, num2){
    return num1 * num2;
   }
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
+
 
 
  /* Use greeting to do the following:
@@ -171,10 +178,14 @@ function multiply(num1, num2){
 💡 NOTE: The string returned must match the format above or the test will not pass!
 */
 
+
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 function greeting(stringFirstName, stringLastName){
    return `Hello ${stringFirstName} ${stringLastName}, nice to meet you!`
   }
-  
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
+
+
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
