@@ -68,8 +68,8 @@ const zooAnimals = [
   function animalNames(array1){
     const displayNames = [];
     array1.forEach(animal => {
-      if(animal === animal.animal_name || animal.scientific_name){
-        return displayNames.push(animal.animal_name && animal.scientific_name)
+      if(animal.animal_name || animal.scientific_name){
+        return displayNames.push(`name: ${animal.animal_name}, scientific: ${animal.scientific_name}`)
       }
     })
     return displayNames
