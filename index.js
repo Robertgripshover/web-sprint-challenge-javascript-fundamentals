@@ -138,10 +138,12 @@ function USApop(array1){
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
 
+
+    //COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
   function consume(a, b, cb){
     return cb(a, b);
   }
- 
+    //COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
@@ -186,13 +188,13 @@ function greeting(stringFirstName, stringLastName){
 //COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 
 
-  
+ //COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED 
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
 // console.log(consume(2, 2, add)); // 4
 // console.log(consume(10, 16, multiply)); // 160
 // console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
-
+//COMPLETED//COMPLETED//COMPLETED//COMPLETED//COMPLETED
 
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
@@ -208,8 +210,10 @@ function greeting(stringFirstName, stringLastName){
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker(attr){
+  this.length = attr.length;
+  this.width = attr.width;
+  this.height = attr.height;
 }
 
 
